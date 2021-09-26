@@ -15,7 +15,7 @@ const Cart = (props) => {
             <br /><br />
             <div className="cart">
             <ul style={{fontSize:"20px", color:"#D33163", fontWeight:"bold"}}>
-                <h2 style={{color:"#ac8585", textAlign:"center", borderBottom:"1px solid gray", padding:"10px"}}>Developers Bio</h2>
+                <h2 style={{color:"#ac8585", textAlign:"center", borderBottom:"1px solid gray", padding:"10px"}}>Hired Developers</h2>
                 {
                     cart.map((team)=><li>
                         {team.name}
