@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../../../Cart/Cart';
-import Teams from '../../../Teams/Teams';
+import Developers from '../../../Developers/Developers';
 import './Projects.css'
 
 const Projects = () => {
 
-    const [teams, setTeams] = useState([]);
+    const [developers, setDevelopers] = useState([]);
     /* To keep cart data in projects */
     const [cart, setCart] = useState([]);
 
-    const handleAddCart = (team) => {
-        const newCart = [...cart,team]
+    const handleAddCart = (developer) => {
+        const newCart = [...cart,developer]
         setCart(newCart);
     }
      useEffect(() => {
          fetch('./projects.JSON')
          .then(res => res.json())
-         .then(data => setTeams(data));
+         .then(data => setDevelopers(data));
      }, [])
 
     return (
@@ -24,17 +24,19 @@ const Projects = () => {
         <div className="row">
             <div className="col-md-9">
                 {/* teams */}
-                <div className="teams-container row">
+                <div className="developers-container row">
                     {
-                        teams.map(team => <Teams
-                        key={team.ExpertIn}
-                        team={team}
-                        handleAddCart={handleAddCart}
-                        ></Teams>)
+                        developers.map(developer => 
+                        <Developers
+                            key={developer.Salary}
+                            developer={developer}
+                            handleAddCart={handleAddCart}
+                            ></Developers>)
+                        
                     }
-                   
-                   <Teams></Teams>    
+                      
                 </div>
+                
                   
             </div>
             <div className="cart-container col-md-3">

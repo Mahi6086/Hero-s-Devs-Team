@@ -1,4 +1,10 @@
 .cart{
+    /* background-color: #212529; */
+    background-color: #0C090A;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 200;
     margin-top: 20px;
     margin-left: 20px;
     padding-left: 15px;

@@ -1,6 +1,7 @@
 .header{
     text-align: center;
-    background-color: #047260;
+    /* background-color: #047260; */
+    background-color: #0C090A;
     width: 75%;
     margin: 0 auto;
     color: #ac8585;
@@ -12,4 +13,11 @@
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+.header h1{
+    color: #D33163;
+    margin-bottom: 0px;
+}
+.header small{
+    font-weight: bold;
 }

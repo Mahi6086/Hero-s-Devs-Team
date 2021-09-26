@@ -6,17 +6,19 @@ const Cart = (props) => {
     const totalReduce=(preValue,CurrValue)=>preValue+CurrValue.Salary;
     const total=cart.reduce(totalReduce,0)
     return (
-        <div className="cart">
-            <h1 style={{color:"#ac8585", textAlign:"center"}}>My-Cart</h1>
-            <h2>Team Member Added: {cart.length}</h2>
-            <h3>Total Cost: {total}$</h3>
-            <ul>
+        <div>
+            <div className="cart">
+            <h1 style={{color:"#ac8585", textAlign:"center", borderBottom:"1px solid gray", padding:"10px"}}>My-Cart</h1>
+            <h2>Added-Person: {cart.length}</h2>
+            <h3 style={{borderBottom:"1px solid gray", padding:"15px"}}>Total-Salary: ${total}</h3>
+            <ul style={{fontSize:"20px", color:"#D33163", fontWeight:"bold"}}>
                 {
                     cart.map((team)=><li>
                         {team.name}
                     </li>)
                 }
             </ul>
+            </div>
         </div>
     );
 };
