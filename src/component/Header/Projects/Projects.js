@@ -23,22 +23,20 @@ const Projects = () => {
     <div className="projects">
         <div className="row">
             <div className="col-md-9">
-                {/* teams */}
+                {/* developers */}
                 <div className="developers-container row">
                     {
                         developers.map(developer => 
                         <Developers
+                        /* use key */
                             key={developer.Salary}
                             developer={developer}
                             handleAddCart={handleAddCart}
                             ></Developers>)
-                        
-                    }
-                      
-                </div>
-                
-                  
+                    }    
+                </div>   
             </div>
+            
             <div className="cart-container col-md-3">
                 {/* cart */}
                 <Cart
