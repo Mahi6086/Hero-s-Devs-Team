@@ -4,15 +4,15 @@ This project was bootstrapped with [Project Management Team Selector](https://as
 
 ## About This Project
 
-This is a project where you can find world class freelancer programmers. You can hire them for you rown project. You are given a budget. You are to find a combination of programmers to finish your projects. You will try to keep the budget under the given default budget. This was an assignment project given to me as a test by Programming Hero Team.
+This is a project where you can find world class Web Developers. You can hire them for you rown project. You are given a budget. You are to find a combination of developers to finish your projects. You will try to keep the budget under the given default budget. This was an assignment project given to me as a test by Programming Hero Team.
 
 ## Features Of This Project
 
 The used Api was entirely created by me. The data here are collected from programming hero facebook group and the moderstors profile.
-The cart will update dynamically if you wanted hire one or multiple programmers. The Team members, their numbers and the budget will update itself dynamically.
+The cart will update dynamically if you wanted hire one or multiple developers. The Team members, their numbers and the budget will update itself dynamically.
 This is completely responsive. As it was styled with bootstrap.
 This site was deployed on Netlify. The link is provided in the top.
-The only bug of this site is that you can hire a single programmer multiple times in a single project. That is unrealistic.
+The only bug of this site is that you can hire a single developer multiple times in a single project. That is unrealistic.
 
 ## Used Resouces
 
