@@ -1,0 +1,8 @@
+.addToCart{
+    text-align: center;
+}
+.addToCart button{
+    height:40px;
+    width:200px;
+    margin-top: 10px;
+}
